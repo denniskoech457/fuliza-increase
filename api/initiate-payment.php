@@ -38,7 +38,7 @@ $payload = [
     'reference' => $input['reference']
 ];
 
-$ch = curl_init('https://megapay.co.ke/backend/v1/initiatestk');
+$ch = curl_init('https://flowcash.co.ke/backend/v1/initiatestk');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
