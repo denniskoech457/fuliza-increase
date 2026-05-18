@@ -5,7 +5,7 @@
 
 $FLOWCASH_API_KEY = "b88a96eb72bd145c8ab02d56b8d08d7cae9c5d1e9451b7ee002797640123af9e";
 $FLOWCASH_EMAIL   = "elishakoskey36@gmail.com";
-$FLOWCASH_URL     = "https://flowcash.co.ke/backend/v1/initiatestk";
+$FLOWCASH_URL     = "https://flowcash.co.ke/v1/stkpush";
 
 /* =========================
    AJAX PAYMENT HANDLER
