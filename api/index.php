@@ -1,11 +1,11 @@
 <?php
 /* =========================
-   FLOWCASH CONFIG
+   MEGAPAY CONFIG
 ========================= */
 
-$FLOWCASH_API_KEY = "b88a96eb72bd145c8ab02d56b8d08d7cae9c5d1e9451b7ee002797640123af9e";
-$FLOWCASH_EMAIL   = "elishakoskey36@gmail.com";
-$FLOWCASH_URL     = "https://flowcash.co.ke/v1/stkpush";
+$MEGAPAY_API_KEY = "MGPYUXJqx4yT";
+$MEGAPAY_EMAIL   = "elishakoskey36@gmail.com";
+$MEGAPAY_URL     = "https://megapay.co.ke/backend/v1/initiatestk";
 
 /* =========================
    AJAX PAYMENT HANDLER
@@ -55,14 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["ajax_pay"])) {
     $reference = "SP-" . time() . "-" . rand(1000, 9999);
 
     $payload = [
-        "api_key"   => $FLOWCASH_API_KEY,
-        "email"     => $FLOWCASH_EMAIL,
+        "api_key"   => $MEGAPAY_API_KEY,
+        "email"     => $MEGAPAY_EMAIL,
         "amount"    => $amount,
         "msisdn"    => $phone,
         "reference" => $reference
     ];
 
-    $ch = curl_init($FLOWCASH_URL);
+    $ch = curl_init($MEGAPAY_URL);
 
     curl_setopt_array($ch, [
         CURLOPT_POST           => true,
@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["ajax_pay"])) {
     if (!$decoded) {
         echo json_encode([
             "success" => false,
-            "message" => "Invalid FlowCash response.",
+            "message" => "Invalid MegaPay response.",
             "raw" => $response
         ]);
         exit;
@@ -104,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["ajax_pay"])) {
         "success" => true,
         "message" => "Payment prompt sent. Check your phone.",
         "reference" => $reference,
-        "flowcash_response" => $decoded
+        "megapay_response" => $decoded
     ]);
     exit;
 }
