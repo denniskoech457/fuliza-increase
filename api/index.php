@@ -234,6 +234,26 @@ input{width:100%;padding:16px;border:1px solid #cdeed8;border-radius:14px;margin
     <div class="card" data-amount="Ksh 45,000" data-fee="Ksh 5,000">
       <div class="check">✓</div><div class="amount">Ksh 45,000</div><div class="fee">Fee: Ksh 5,000</div>
     </div>
+     
+     <div class="card" data-amount="Ksh 50,000" data-fee="Ksh 5,500">
+      <div class="check">✓</div><div class="amount">Ksh 50,000</div><div class="fee">Fee: Ksh 5,500</div>
+    </div>
+
+     <div class="card" data-amount="Ksh 55,000" data-fee="Ksh 6,000">
+      <div class="check">✓</div><div class="amount">Ksh 55,000</div><div class="fee">Fee: Ksh 6,000</div>
+    </div>
+
+     <div class="card" data-amount="Ksh 60,000" data-fee="Ksh 6,500">
+      <div class="check">✓</div><div class="amount">Ksh 60,000</div><div class="fee">Fee: Ksh 6,500</div>
+    </div>
+
+     <div class="card" data-amount="Ksh 65,000" data-fee="Ksh 7,000">
+      <div class="check">✓</div><div class="amount">Ksh 65,000</div><div class="fee">Fee: Ksh 7,000</div>
+    </div>
+
+     <div class="card" data-amount="Ksh 70,000" data-fee="Ksh 8,000">
+      <div class="check">✓</div><div class="amount">Ksh 70,000</div><div class="fee">Fee: Ksh 8,000</div>
+    </div>
   </div>
 
   <div class="security">SECURE • ENCRYPTED • VERIFIED</div>
