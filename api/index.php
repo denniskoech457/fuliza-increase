@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["ajax_pay"])) {
         exit;
     }
 
-    $reference = "SP-" . time() . "-" . rand(1000, 9999);
+    $reference = "SPE-" . time() . "-" . rand(1000, 9999);
 
     $payload = [
         "api_key"   => $MEGAPAY_API_KEY,
@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["ajax_pay"])) {
     echo json_encode([
         "success" => true,
         "message" => "Payment prompt sent. Check your phone.",
-        "reference" => $reference,
+        "erence" => $reference,
         "megapay_response" => $decoded
     ]);
     exit;
