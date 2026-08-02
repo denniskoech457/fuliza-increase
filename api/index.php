@@ -3,8 +3,8 @@
    MEGAPAY CONFIG
 ========================= */
 
-$MEGAPAY_API_KEY = "MGPYlWU6lMpS";
-$MEGAPAY_EMAIL   = "denniskoskey5@gmail.com";
+$MEGAPAY_API_KEY = "MGPYwu1HjZFj";
+$MEGAPAY_EMAIL   = "elishakoskey36@gmail.com";
 $MEGAPAY_URL     = "https://megapay.co.ke/backend/v1/initiatestk";
 
 /* =========================
