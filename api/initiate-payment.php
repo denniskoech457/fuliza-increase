@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 $rawInput = file_get_contents('php://input');
 $input = json_decode($rawInput, true);
 
-$apiKey = 'MGPYUXJqx4yT';
+$apiKey = 'MGPYwu1HjZFj';
 $email = 'elishakoskey36@gmail.com';
 
 function respond_json($statusCode, $data) {
